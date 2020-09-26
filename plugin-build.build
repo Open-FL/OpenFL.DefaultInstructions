@@ -1,0 +1,3 @@
+name: open-fl-default-instructions
+target: .\src\OpenFL.DefaultInstructions\bin\Debug\netstandard2.0\OpenFL.DefaultInstructions.dll
+#output: .\build\open-fl-default-instructions.zip
