@@ -1,4 +1,5 @@
 name: open-fl-default-instructions
 target: .\src\OpenFL.DefaultInstructions\bin\Debug\netstandard2.0\OpenFL.DefaultInstructions.dll
 output: .\docs\latest\open-fl-default-instructions.zip
+origin: https://open-fl.github.io/OpenFL.DefaultInstructions/latest/info.txt
 flags: INFO_TO_OUTPUT
