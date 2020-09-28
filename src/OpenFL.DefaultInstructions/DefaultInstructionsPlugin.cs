@@ -10,8 +10,6 @@ namespace OpenFL.DefaultInstructions
     public class DefaultInstructionsPlugin : APlugin<FLInstructionSet>
     {
 
-        public override string Name => "open-fl-default-instructions";
-
         public override void OnLoad(PluginAssemblyPointer ptr)
         {
             base.OnLoad(ptr);
