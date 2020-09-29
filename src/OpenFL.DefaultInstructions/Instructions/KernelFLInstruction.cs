@@ -16,7 +16,7 @@ namespace OpenFL.DefaultInstructions.Instructions
     {
 
         /// <summary>
-        /// FL header Count(the offset from 0 where the "user" parameter start)
+        ///     FL header Count(the offset from 0 where the "user" parameter start)
         /// </summary>
         public const int FL_HEADER_ARG_COUNT = 5;
 
