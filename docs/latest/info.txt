@@ -1,1 +1,1 @@
-open-fl-default-instructions|OpenFL.DefaultInstructions.dll|https://open-fl.github.io/OpenFL.DefaultInstructions/latest/info.txt|0.0.1.33|
+open-fl-default-instructions|OpenFL.DefaultInstructions.dll|https://open-fl.github.io/OpenFL.DefaultInstructions/latest/info.txt|0.0.1.34|
