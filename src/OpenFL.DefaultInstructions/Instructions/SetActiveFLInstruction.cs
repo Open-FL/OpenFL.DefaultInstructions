@@ -48,9 +48,7 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                                       Root.Dimensions.x,
                                                                       Root.Dimensions.y,
                                                                       Root.Dimensions.z,
-                                                                      "FunctionInputBuffer_Registered",
-                                                                      MemoryFlag.ReadWrite,
-                                                                      true
+                                                                      "FunctionInputBuffer_Registered"
                                                                      )
                                                         );
                         IFunction source = (IFunction) Arguments[i].GetValue();

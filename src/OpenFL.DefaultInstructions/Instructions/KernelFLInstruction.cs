@@ -74,9 +74,7 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                           Root.Dimensions.x,
                                                           Root.Dimensions.y,
                                                           Root.Dimensions.z,
-                                                          $"{flFunction.Name}_InputBuffer",
-                                                          MemoryFlag.ReadWrite,
-                                                          true
+                                                          $"{flFunction.Name}_InputBuffer"
                                                          )
                                             );
 
