@@ -1,5 +1,12 @@
 name: open-fl-default-instructions
-target: .\src\OpenFL.DefaultInstructions\bin\Debug\netstandard2.0\OpenFL.DefaultInstructions.dll
-output: .\docs\latest\open-fl-default-instructions.zip
-origin: https://open-fl.github.io/OpenFL.DefaultInstructions/latest/info.txt
+project-name: OpenFL.DefaultInstructions
+branch: Debug
 flags: INFO_TO_OUTPUT
+
+#Build Info
+target: %buildout%\%project-name%.dll
+output: .\docs\latest\%name%.zip
+origin: https://open-fl.github.io/%project-name%/latest/info.txt
+solution: .\src\%project-name%.sln
+buildout: .\src\%project-name%\bin\%branch%\netstandard2.0
+buildcmd: dotnet build {0} -c %branch%
