@@ -77,15 +77,12 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                    FLBuffer buf = new FLBuffer(
                                                                                root.Instance,
                                                                                CLAPI.CreateRandom(
-                                                                                                  root.InputSize,
-                                                                                                  new byte[]
-                                                                                                  {
-                                                                                                      1, 1, 1, 1
-                                                                                                  },
-                                                                                                  RandomInstructionHelper
-                                                                                                      .Randombytesource,
-                                                                                                  false
-                                                                                                 ),
+                                                                                    root.InputSize,
+                                                                                    new byte[] { 1, 1, 1, 1 },
+                                                                                    RandomInstructionHelper
+                                                                                        .Randombytesource,
+                                                                                    false
+                                                                                   ),
                                                                                root.Dimensions.x,
                                                                                root.Dimensions.y,
                                                                                root.Dimensions.z,
@@ -105,15 +102,12 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                    FLBuffer buf = new FLBuffer(
                                                                                root.Instance,
                                                                                CLAPI.CreateRandom(
-                                                                                                  size,
-                                                                                                  new byte[]
-                                                                                                  {
-                                                                                                      1, 1, 1, 1
-                                                                                                  },
-                                                                                                  RandomInstructionHelper
-                                                                                                      .Randombytesource,
-                                                                                                  false
-                                                                                                 ),
+                                                                                    size,
+                                                                                    new byte[] { 1, 1, 1, 1 },
+                                                                                    RandomInstructionHelper
+                                                                                        .Randombytesource,
+                                                                                    false
+                                                                                   ),
                                                                                size,
                                                                                1,
                                                                                1,

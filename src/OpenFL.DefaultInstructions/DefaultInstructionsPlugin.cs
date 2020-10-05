@@ -39,10 +39,10 @@ namespace OpenFL.DefaultInstructions
                                                                                 "Prints text or all kinds of variables to the console."
                                                                                );
             PluginHost.AddInstructionWithDefaultCreator<CPUArrangeFLInstruction>(
-                                                                                 "arrange",
-                                                                                 "V|VV|VVV|VVVV",
-                                                                                 "Swaps the channels based on the arguments provided"
-                                                                                );
+                 "arrange",
+                 "V|VV|VVV|VVVV",
+                 "Swaps the channels based on the arguments provided"
+                );
             PluginHost.AddInstructionWithDefaultCreator<ArraySetFLInstruction>(
                                                                                "arrset",
                                                                                "CVV",

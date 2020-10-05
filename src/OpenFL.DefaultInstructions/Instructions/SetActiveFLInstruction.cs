@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using OpenCL.NET.Memory;
-
 using OpenFL.Core.Buffers;
 using OpenFL.Core.DataObjects.ExecutableDataObjects;
 

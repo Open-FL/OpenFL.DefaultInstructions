@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using OpenCL.NET.Memory;
 using OpenCL.Wrapper;
 
 using OpenFL.Core.Buffers;
