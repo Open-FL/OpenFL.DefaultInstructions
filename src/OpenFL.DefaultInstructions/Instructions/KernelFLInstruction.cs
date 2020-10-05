@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using OpenCL.NET.Memory;
 using OpenCL.Wrapper;
 
+using OpenFL.Core;
 using OpenFL.Core.Buffers;
 using OpenFL.Core.DataObjects.ExecutableDataObjects;
 
@@ -73,7 +75,9 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                           Root.Dimensions.x,
                                                           Root.Dimensions.y,
                                                           Root.Dimensions.z,
-                                                          $"{flFunction.Name}_InputBuffer"
+                                                          $"{flFunction.Name}_InputBuffer",
+                                                          MemoryFlag.ReadWrite,
+                                                          flFunction.Modifiers.GetModifiers().Contains(FLKeywords.OptimizeBufferCreationKeyword)
                                                          )
                                             );
 

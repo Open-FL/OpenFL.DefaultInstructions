@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using OpenCL.NET.Memory;
+
+using OpenFL.Core;
 using OpenFL.Core.Buffers;
 using OpenFL.Core.DataObjects.ExecutableDataObjects;
 
@@ -39,6 +42,7 @@ namespace OpenFL.DefaultInstructions.Instructions
 
                     if (Arguments[i].Type == FLInstructionArgumentType.Function)
                     {
+                        IFunction source = (IFunction)Arguments[i].GetValue();
                         FLBuffer buffer =
                             Root.RegisterUnmanagedBuffer(
                                                          new FLBuffer(
@@ -46,10 +50,11 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                                       Root.Dimensions.x,
                                                                       Root.Dimensions.y,
                                                                       Root.Dimensions.z,
-                                                                      "FunctionInputBuffer_Registered"
+                                                                      "FunctionInputBuffer_Registered",
+                                                                      MemoryFlag.ReadWrite,
+                                                                      source.Modifiers.GetModifiers().Contains(FLKeywords.OptimizeBufferCreationKeyword)
                                                                      )
                                                         );
-                        IFunction source = (IFunction) Arguments[i].GetValue();
 
 
                         Logger.Log(LogType.Log, "Storing Current Execution Context", MIN_INSTRUCTION_SEVERITY + 3);
