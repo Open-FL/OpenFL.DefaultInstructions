@@ -35,7 +35,7 @@ namespace OpenFL.DefaultInstructions.Instructions
                 }
             }
 
-            Logger.Log(LogType.Log, log, 1);
+            Logger.Log(LogType.Log, log, 0);
         }
 
         public override string ToString()
