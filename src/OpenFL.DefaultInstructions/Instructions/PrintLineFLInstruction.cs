@@ -17,7 +17,7 @@ namespace OpenFL.DefaultInstructions.Instructions
 
         public override void Process()
         {
-            string log = "FLSCRIPT:";
+            string log = "print:";
             for (int i = 0; i < Arguments.Count; i++)
             {
                 if (Arguments[i].Type == FLInstructionArgumentType.Number)
@@ -35,7 +35,7 @@ namespace OpenFL.DefaultInstructions.Instructions
                 }
             }
 
-            Logger.Log(LogType.Log, log, 0);
+            Logger.Log(LogType.Log, log, 1);
         }
 
         public override string ToString()
