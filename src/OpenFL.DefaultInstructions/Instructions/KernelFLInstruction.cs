@@ -77,7 +77,8 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                           Root.Dimensions.z,
                                                           $"{flFunction.Name}_InputBuffer",
                                                           MemoryFlag.ReadWrite,
-                                                          flFunction.Modifiers.GetModifiers().Contains(FLKeywords.OptimizeBufferCreationKeyword)
+                                                          flFunction.Modifiers.GetModifiers()
+                                                                    .Contains(FLKeywords.OptimizeBufferCreationKeyword)
                                                          )
                                             );
 

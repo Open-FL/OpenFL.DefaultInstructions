@@ -42,7 +42,7 @@ namespace OpenFL.DefaultInstructions.Instructions
 
                     if (Arguments[i].Type == FLInstructionArgumentType.Function)
                     {
-                        IFunction source = (IFunction)Arguments[i].GetValue();
+                        IFunction source = (IFunction) Arguments[i].GetValue();
                         FLBuffer buffer =
                             Root.RegisterUnmanagedBuffer(
                                                          new FLBuffer(
@@ -52,7 +52,11 @@ namespace OpenFL.DefaultInstructions.Instructions
                                                                       Root.Dimensions.z,
                                                                       "FunctionInputBuffer_Registered",
                                                                       MemoryFlag.ReadWrite,
-                                                                      source.Modifiers.GetModifiers().Contains(FLKeywords.OptimizeBufferCreationKeyword)
+                                                                      source.Modifiers.GetModifiers()
+                                                                            .Contains(
+                                                                                 FLKeywords
+                                                                                     .OptimizeBufferCreationKeyword
+                                                                                )
                                                                      )
                                                         );
 
