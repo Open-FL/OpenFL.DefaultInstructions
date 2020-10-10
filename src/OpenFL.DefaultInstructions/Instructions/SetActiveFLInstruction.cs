@@ -28,7 +28,7 @@ namespace OpenFL.DefaultInstructions.Instructions
                 {
                     if (Arguments[i].Type == FLInstructionArgumentType.Buffer)
                     {
-                        FLBuffer obj = (FLBuffer)Arguments[i].GetValue();
+                        FLBuffer obj = (FLBuffer) Arguments[i].GetValue();
                         Logger.Log(
                                    LogType.Log,
                                    "Setting Active Buffer: " + obj.DefinedBufferName,
@@ -42,7 +42,7 @@ namespace OpenFL.DefaultInstructions.Instructions
 
                     if (Arguments[i].Type == FLInstructionArgumentType.Function)
                     {
-                        IFunction source = (IFunction)Arguments[i].GetValue();
+                        IFunction source = (IFunction) Arguments[i].GetValue();
                         FLBuffer buffer =
                             Root.RegisterUnmanagedBuffer(
                                                          new FLBuffer(
@@ -82,17 +82,19 @@ namespace OpenFL.DefaultInstructions.Instructions
                     }
                 }
 
-                if (Arguments[i].Type == FLInstructionArgumentType.Number || Arguments[i].Type == FLInstructionArgumentType.Name)
+                if (Arguments[i].Type == FLInstructionArgumentType.Number ||
+                    Arguments[i].Type == FLInstructionArgumentType.Name)
                 {
                     int channel;
                     if (Arguments[i].Type == FLInstructionArgumentType.Number)
                     {
-                        channel = (int)Convert.ChangeType(Arguments[i].GetValue(), typeof(int));
+                        channel = (int) Convert.ChangeType(Arguments[i].GetValue(), typeof(int));
                     }
                     else
                     {
-                        channel = (int)Parent.Variables.GetVariable(Arguments[i].GetValue().ToString());
+                        channel = (int) Parent.Variables.GetVariable(Arguments[i].GetValue().ToString());
                     }
+
                     Logger.Log(LogType.Log, "Setting Active Channel: " + channel, MIN_INSTRUCTION_SEVERITY);
                     newFlags[channel] = 1;
                 }
